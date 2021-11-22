@@ -239,6 +239,8 @@ for ($i=0; $i < 3; $i++) { ?>
                            
                             <!-- <script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script> -->
 
+                            
+
                             <div id="gpr-kominfo-widget-container" data-aos="fade-in" data-aos-delay="100" style="min-width:300px; max-width:780px;best-width:500px "></div>
                          
                         </div>
