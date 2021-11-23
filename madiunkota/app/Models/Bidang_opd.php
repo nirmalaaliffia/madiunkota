@@ -15,6 +15,6 @@ class Bidang_opd extends Model
     // public $increment = false;
 
     protected $fillable = [
-        'id', 'nama_bidang'
+        'id', 'nama_bidang',
     ];
 }
