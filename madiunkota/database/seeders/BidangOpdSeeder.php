@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use app\Models\Bidang_opd;
+use App\Models\Bidang_opd;
 
 class BidangOpdSeeder extends Seeder
 {
