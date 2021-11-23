@@ -445,26 +445,6 @@ $(document).ready(function() {
 
     
 
-    // $('#btn_view').click(function(e){
-    //   e.preventDefault();
-
-   
-    //   $.ajax({
-    //     data: $('form_view_berita').serialize(),
-    //     url: "/admin/beritsada"
-
-    //   });
-    //   $('#modal_view_berita').modal('show');
-    // });
-
-
-
-  
-
-
-
-
-
    });
 </script>
     
