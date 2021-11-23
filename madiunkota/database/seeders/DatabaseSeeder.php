@@ -9,6 +9,7 @@ use App\Models\kategori;
 use app\Models\profil;
 use app\Models\opd;
 use app\Models\foto_berita;
+use app\Models\Bidang_opd;
 use app\Models\alamat_opd;
 use app\Models\file_berita;
 use Monolog\Handler\InsightOpsHandler;
