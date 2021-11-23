@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class berita extends Model
+class Berita extends Model
 {
     use HasFactory;
 
