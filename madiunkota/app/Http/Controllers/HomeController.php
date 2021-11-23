@@ -49,83 +49,83 @@ class HomeController extends Controller
         // join users u on b.id=u.id "));
 
         
-        $berita_pinned= DB::select(DB::raw("select b.id as id_berita, b.deskripsi,u.name , b.judul , b.created_at , a.foto, a.path_foto, k.array_kategori
-        from beritas b 
-         join ( select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
-                    from berita_kategoris bk 
-                    join kategoris k on k.id =bk.id_kategori
-                    group by bk.id_berita
-                ) k using (id)
-           left join (
-            select distinct on (fb.id_berita ) fb.id_berita ,fb.nama_foto as foto, fb.path_foto as path_foto
-            from foto_beritas fb 
-            join beritas b2 on b2.id = fb.id_berita
-            where fb.nama_foto similar to '%(.jpg|.png|.jpeg)%'
-           )as a  on b.id =a.id_berita
-        join users u on u.id =b.id_pengirim
-        where b.status_publish =1 and b.status_pinned=1
-        order by b.created_at DESC"));
+        // $berita_pinned= DB::select(DB::raw("select b.id as id_berita, b.deskripsi,u.name , b.judul , b.created_at , a.foto, a.path_foto, k.array_kategori
+        // from beritas b 
+        //  join ( select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
+        //             from berita_kategoris bk 
+        //             join kategoris k on k.id =bk.id_kategori
+        //             group by bk.id_berita
+        //         ) k using (id)
+        //    left join (
+        //     select distinct on (fb.id_berita ) fb.id_berita ,fb.nama_foto as foto, fb.path_foto as path_foto
+        //     from foto_beritas fb 
+        //     join beritas b2 on b2.id = fb.id_berita
+        //     where fb.nama_foto similar to '%(.jpg|.png|.jpeg)%'
+        //    )as a  on b.id =a.id_berita
+        // join users u on u.id =b.id_pengirim
+        // where b.status_publish =1 and b.status_pinned=1
+        // order by b.created_at DESC"));
 
 
-        $berita= DB::select(DB::raw("select b.id as id_berita,b.deskripsi, u.name , b.judul , b.created_at , a.foto, a.path_foto, k.array_kategori
-        from beritas b 
-         join ( select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
-                    from berita_kategoris bk 
-                    join kategoris k on k.id =bk.id_kategori
-                    group by bk.id_berita
-                ) k using (id)
-           left join (
-            select distinct on (fb.id_berita ) fb.id_berita ,fb.nama_foto as foto, fb.path_foto as path_foto
-            from foto_beritas fb 
-            join beritas b2 on b2.id = fb.id_berita
-            where fb.nama_foto similar to '%(.jpg|.png|.jpeg)%'
-           )as a  on b.id =a.id_berita
-        join users u on u.id =b.id_pengirim
-        where b.status_publish =1 and b.status_pinned=0
-        order by b.created_at DESC
-        limit 8"));
+        // $berita= DB::select(DB::raw("select b.id as id_berita,b.deskripsi, u.name , b.judul , b.created_at , a.foto, a.path_foto, k.array_kategori
+        // from beritas b 
+        //  join ( select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
+        //             from berita_kategoris bk 
+        //             join kategoris k on k.id =bk.id_kategori
+        //             group by bk.id_berita
+        //         ) k using (id)
+        //    left join (
+        //     select distinct on (fb.id_berita ) fb.id_berita ,fb.nama_foto as foto, fb.path_foto as path_foto
+        //     from foto_beritas fb 
+        //     join beritas b2 on b2.id = fb.id_berita
+        //     where fb.nama_foto similar to '%(.jpg|.png|.jpeg)%'
+        //    )as a  on b.id =a.id_berita
+        // join users u on u.id =b.id_pengirim
+        // where b.status_publish =1 and b.status_pinned=0
+        // order by b.created_at DESC
+        // limit 8"));
 
         
 
 
-        $tabloid=DB::select(DB::raw("select b.id as id_berita, b.deskripsi,u.name , b.judul , b.created_at , a.foto, a.path_foto, k.array_kategori
-        from beritas b 
-         join ( select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
-                    from berita_kategoris bk 
-                    join kategoris k on k.id =bk.id_kategori
-                    where k.id =2
-                    group by bk.id_berita
-                ) k using (id)
-           left join (
-            select distinct on (fb.id_berita ) fb.id_berita ,fb.nama_foto as foto, fb.path_foto as path_foto
-            from foto_beritas fb 
-            join beritas b2 on b2.id = fb.id_berita
-            where fb.nama_foto similar to '%(.jpg|.png|.jpeg)%'
-           )as a  on b.id =a.id_berita
-        join users u on u.id =b.id_pengirim
-        where b.status_publish =1 
-        order by b.created_at desc"));
+        // $tabloid=DB::select(DB::raw("select b.id as id_berita, b.deskripsi,u.name , b.judul , b.created_at , a.foto, a.path_foto, k.array_kategori
+        // from beritas b 
+        //  join ( select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
+        //             from berita_kategoris bk 
+        //             join kategoris k on k.id =bk.id_kategori
+        //             where k.id =2
+        //             group by bk.id_berita
+        //         ) k using (id)
+        //    left join (
+        //     select distinct on (fb.id_berita ) fb.id_berita ,fb.nama_foto as foto, fb.path_foto as path_foto
+        //     from foto_beritas fb 
+        //     join beritas b2 on b2.id = fb.id_berita
+        //     where fb.nama_foto similar to '%(.jpg|.png|.jpeg)%'
+        //    )as a  on b.id =a.id_berita
+        // join users u on u.id =b.id_pengirim
+        // where b.status_publish =1 
+        // order by b.created_at desc"));
 
 
-        $client = new Client();
+        // $client = new Client();
 
-        $link = 'http://10.11.15.69:680/api/ruangrapat/jadwal';
+        // $link = 'http://10.11.15.69:680/api/ruangrapat/jadwal';
 
-        try{
-            $response = $client->post($link, 
-                array(
-                    'headers' => array(
-                        'passcode' => 'k0taPendekArr'
-                    )
-                )
-            );
-        }catch(RequestException $e){
-            var_dump($e->getResponse()->getBody()->getContents());
-        }
+        // try{
+        //     $response = $client->post($link, 
+        //         array(
+        //             'headers' => array(
+        //                 'passcode' => 'k0taPendekArr'
+        //             )
+        //         )
+        //     );
+        // }catch(RequestException $e){
+        //     var_dump($e->getResponse()->getBody()->getContents());
+        // }
         
-        $json = $response->getBody()->getContents();
+        // $json = $response->getBody()->getContents();
         
-        $array_result = json_decode($json, true);
+        // $array_result = json_decode($json, true);
         // print_r($array_result);
 
         // echo $array_result["data"]["0"]["visi"];
@@ -152,10 +152,10 @@ class HomeController extends Controller
         return view('home',[
             "title" => "Home",
            "parent" => "Home",
-           "berita" => $berita,
-           "tabloid" => $tabloid,
-           "berita_pinned" => $berita_pinned,
-           "agenda" => $array_result
+        //    "berita" => $berita,
+        //    "tabloid" => $tabloid,
+        //    "berita_pinned" => $berita_pinned,
+        //    "agenda" => $array_result
         ]);
     }
 
