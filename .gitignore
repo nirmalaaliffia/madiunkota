@@ -1,2 +1,6 @@
 postgres-data
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> 582f2fd2b32e5e692a80c4b772ea6e0892d7dcd1
