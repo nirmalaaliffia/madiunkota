@@ -25,9 +25,11 @@ class KategoriSeeder extends Seeder
        Kategori::create([
             'jenis_kategori' => 'Tabloid', 'warna_label' => 'Blue','status_aktif' => '1'
         ]);
+
         Kategori::create([
             'jenis_kategori' => 'Pengumuman', 'warna_label' => 'Green','status_aktif' => '1'
         ]);
+
         Kategori::create([
             'jenis_kategori' => 'lowongan', 'warna_label' => 'Brown','status_aktif' => '1'
         ]);
@@ -44,15 +46,19 @@ class KategoriSeeder extends Seeder
        Kategori::create([
             'jenis_kategori' => 'Kegiatan Pemkot', 'warna_label' => 'fuschia','status_aktif' => '1'
         ]);
+
         Kategori::create([
             'jenis_kategori' => 'Kegiatan Walikota', 'warna_label' => 'navy','status_aktif' => '1'
         ]);
+
         Kategori::create([
             'jenis_kategori' => 'Data Penduduk 2019', 'warna_label' => 'lime','status_aktif' => '1'
         ]);
+
         Kategori::create([
             'jenis_kategori' => 'Foto', 'warna_label' => 'lime','status_aktif' => '1'
         ]);
+        
         Kategori::create([
             'jenis_kategori' => 'Video', 'warna_label' => 'black','status_aktif' => '1'
         ]);
