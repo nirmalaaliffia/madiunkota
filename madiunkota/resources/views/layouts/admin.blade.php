@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="{{ asset('template_admin/plugins/bs-stepper/css/bs-stepper.min.css') }}">
     <!-- dropzonejs -->
     <link rel="stylesheet" href="{{ asset('template_admin/plugins/dropzone/min/dropzone.min.css') }}">
-
+    <script src="https://kit.fontawesome.com/76ab537f22.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
 </head>
