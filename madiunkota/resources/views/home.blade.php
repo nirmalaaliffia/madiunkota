@@ -1,4 +1,4 @@
-
+@extends('layouts.main')
 <!-- ======= Hero Section ======= -->
 @section('marque')
 <marquee width="100%" direction="left">
