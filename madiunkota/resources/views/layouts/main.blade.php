@@ -93,7 +93,7 @@
                         <h4>Link Terkait</h4>
                         <ul>
                             <li><box-icon name='chevrons-right' type='solid' color='#ffffff' ></box-icon> <a href="madiunkota.bps.go.id" target="_blank">BPS Kota Madiun</a></li>
-                            <li><box-icon name='chevrons-right' type='solid' color='#ffffff' ></box-icon><a href="kotamadiun.jdih.jatimprov.go.id" target="_blank">JDIH Kota Madiun</a></li>
+                            <li><box-icon name='chevrons-right' type='solid' color='#ffffff' ></box-icon><a href="jdih.madiunkota.go.id" target="_blank">JDIH Kota Madiun</a></li>
                             <li><box-icon name='chevrons-right' type='solid' color='#ffffff' ></box-icon><a href="mail.madiunkota.go.id" target="_blank">Login Email</a></li>
                         </ul>
                     </div>
