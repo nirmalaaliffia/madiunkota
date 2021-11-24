@@ -181,7 +181,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #67b0d1;
+  color: white;
+  /* color: #67b0d1; */
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
