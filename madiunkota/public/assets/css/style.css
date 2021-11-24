@@ -150,7 +150,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); */
+  background: #004a13;
 }
 .navbar .dropdown ul {
   display: block;
@@ -174,7 +175,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   text-transform: none;
   font-weight: 600;
-  color: #2f4d5a;
+  /* color: #2f4d5a; */
+  color: #004a13;
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
