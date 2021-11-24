@@ -6,7 +6,7 @@ use Carbon\Carbon;
 use App\Models\Berita;
 use App\Models\foto_berita;
 use Illuminate\Http\Request;
-use App\Models\berita_kategori;
+use App\Models\Berita_kategori;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 
