@@ -58,7 +58,7 @@ for ($i=0; $i < 3; $i++) { ?>
 
                 <a href="https://ppid.madiunkota.go.id/" target="_blank"
                     class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/ppid.jpg" class="card-img" alt="PPID">
                     </div>
                 </a>
@@ -66,20 +66,20 @@ for ($i=0; $i < 3; $i++) { ?>
 
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSccoegaoe1Ft8U41d2OkyCu6Y7YhBm68m0vZjfg4Ls51aUxpw/viewform"
                 target="_blank" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/layanan.jpg" class="card-img" alt="...">
                     </div>
                 </a>
 
                 <a href="https://kotamadiun.lapor.go.id/" target="_blank"
                     class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/lapor.id_.jpg" class="card-img" alt="...">
                     </div>
                 </a>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/saber-pungli.jpg" class="card-img" alt="...">
                     </div>
                 </div>
@@ -91,28 +91,28 @@ for ($i=0; $i < 3; $i++) { ?>
 
                 <a href="http://lpse.madiunkota.go.id/" target="_blank"
                     class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/lpseslmtf-1.jpg" class="card-img" alt="...">
                     </div>
                 </a>
 
                 <a href="https://elhkpn.kpk.go.id/portal/user/pengumuman_lhkpn/YTNkaEt6UjBjMGxJT0RGR1JuVjVVWEJ5YTBGUE0wdFNlakEwU0ZoMVZYRkZaVWRaUlcxbVpWUkVSRUZTTUVKRk1tZHdNVkpJWjFOb1drVm1OV2N3VXc9PQ=="
                 target="_blank" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/elhkpn.png" class="card-img" alt="...">
                     </div>
                 </a>
 
                 <a href="https://sirup.lkpp.go.id/sirup/home/rekapKldi?idKldi=D179" target="_blank"
                     class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/sirup.jpg" class="card-img" alt="...">
                     </div>
                 </a>
 
                 <a href="https://ula.kemendagri.go.id/" target="_blank"
                     class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/SHIOLA.jpg" class="card-img" alt="...">
                     </div>
                 </a>
@@ -124,25 +124,25 @@ for ($i=0; $i < 3; $i++) { ?>
 
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/rlppd.jpg" class="card-img" alt="...">
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/opd.jpg" class="card-img" alt="...">
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/produk-huk.jpg" class="card-img" alt="...">
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/ormas.jpg" class="card-img" alt="...">
                     </div>
                 </div>
