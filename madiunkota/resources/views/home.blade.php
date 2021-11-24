@@ -8,7 +8,7 @@
 <?php 
 for ($i=0; $i < 3; $i++) { ?>
            
-           <span style="color:white">
+           <span style="color:#faed27">
         
        <?php     echo "Agenda Terdekat : ".$agenda['data'][$i]['judul_rapat']." - ";
             echo $agenda['data'][$i]['lokasi_rapat']." - "; 
