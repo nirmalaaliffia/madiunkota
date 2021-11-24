@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   text-transform: none;
   font-weight: 600;
-  color: #2f4d5a;
+  color: #004a13;
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
@@ -237,8 +237,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: white;
-  /* background: rgba(43, 111, 142, 0.9); */
+  background: rgba(43, 111, 142, 0.9);
   transition: 0.3s;
 }
 .navbar-mobile .mobile-nav-toggle {
