@@ -22,7 +22,7 @@
     <link href="{{ asset('assets/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/boxicons.min.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('assets/boxicons.min.css') }}" rel="stylesheet"> --}}
     <link href="{{ asset('assets/glightbox.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/swiper-bundle.min.css') }}" rel="stylesheet">
 
