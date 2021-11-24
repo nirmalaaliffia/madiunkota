@@ -15,20 +15,20 @@
 
     <!-- Google Fonts -->
     <link
-        href="{{ asset('template_login/css_font.css') }}"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{ asset('assets/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/bootstrap-icons.css') }}" rel="stylesheet">
-    {{-- <link href="{{ asset('assets/boxicons.min.css') }}" rel="stylesheet"> --}}
-    <link href="{{ asset('assets/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('template_login/jquery.dataTables.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 
     <!-- =======================================================
   * Template Name: Squadfree - v4.6.0
@@ -47,7 +47,7 @@
 
     @yield('container')
 
-    <script src="{{ asset('template_login/platform.js') }}" defer></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <div class="elfsight-app-cf308ac4-77d9-4013-b9ab-c96a18ce6e53"></div>
     <!-- End #container -->
 
@@ -135,8 +135,9 @@
     <!-- Template Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('template_login/jquery.dataTables.min.js') }}"></script>
-    
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  
 
     @stack('script')
 

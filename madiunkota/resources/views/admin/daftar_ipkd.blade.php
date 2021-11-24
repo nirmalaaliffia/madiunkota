@@ -222,7 +222,9 @@ $(document).ready(function() {
    
    
 } );
-
+    // $(function(){
+    //   $('#modal_view_berita').modal('show');
+    // });
 
     $(document).ready(function () {
 
@@ -259,6 +261,62 @@ $(document).ready(function() {
              });
 
         });
+
+
+        // function edit_user(id){
+        //     $.ajax({
+        //         data: id,
+        //         url: "/admin/user/" + id + "/edit",
+        //         type: 'get',
+        //         dataType: 'json',
+        //         success: function (response) {
+        //             // var bidang = JSON.parse(response.list_bidang);
+        //             $('#modal_edit_user').modal('show');
+        //             $('#edit_nama').val(response.user_selected[0]['name']);
+        //             $('#edit_email').val(response.user_selected[0]['email']);
+        //              $('#edit_id').val(response.user_selected[0]['id']);
+        //              var form = document.getElementById("edit_form_user");
+        //              form.action = "/admin/user/" + response.user_selected[0]['id'] ;
+        //               }
+        //     });
+        // }
+
+        // $('.btn-edit-opd').click(function (e) {
+                 
+        //          var $id = this.getAttribute('data-entry');
+                
+        //          $.ajax({
+        //         data: $id,
+        //         url: "/admin/opd/" + $id + "/edit",
+        //         type: 'get',
+        //         dataType: 'json',
+        //         success: function (response) {
+        //          // var bidang = JSON.parse(response.list_bidang);
+        //          $('#modal_edit_opd').modal('show');
+                
+        //          $('#edit_nama_opd').val(response.opd_selected[0]['nama_opd']);
+        //         //  $('#edit_bidang_opd').val(response.opd_selected[0]['id_bidang']);
+        //          $('#edit_alamat_opd').val(response.opd_selected[0]['alamat_opd']);
+        //          $('#edit_telp_opd').val(response.opd_selected[0]['no_telp']);
+        //          $('#edit_fax_opd').val(response.opd_selected[0]['no_fax']);
+                 
+        //          $("#edit_bidang_opd").val(response.opd_selected[0]['id_bidang']).trigger('change');
+        //          var form = document.getElementById("edit_form_opd");
+        //           form.action = "/admin/opd/" + response.opd_selected[0]['id_opd'] ;
+        //         }
+
+        //     });
+
+        //      });
+
+
+
+
+
+
+
+
+
 
 
 

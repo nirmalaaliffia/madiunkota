@@ -10,10 +10,9 @@ for ($i=0; $i < 3; $i++) { ?>
            
            <span style="color:#39FF14">
         
-       <?php     
-            // echo "Agenda Terdekat : ".$agenda['data'][$i]['judul_rapat']." - ";
-            // echo $agenda['data'][$i]['lokasi_rapat']." - "; 
-            // echo date('d M Y H:i', strtotime($agenda["data"]["$i"]["mulai"] )); ?>
+       <?php     echo "Agenda Terdekat : ".$agenda['data'][$i]['judul_rapat']." - ";
+            echo $agenda['data'][$i]['lokasi_rapat']." - "; 
+            echo date('d M Y H:i', strtotime($agenda["data"]["$i"]["mulai"] )); ?>
            </span> 
             
             &emsp;
@@ -58,7 +57,7 @@ for ($i=0; $i < 3; $i++) { ?>
 
                 <a href="https://ppid.madiunkota.go.id/" target="_blank"
                     class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/ppid.jpg" class="card-img" alt="PPID">
                     </div>
                 </a>
@@ -66,20 +65,20 @@ for ($i=0; $i < 3; $i++) { ?>
 
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSccoegaoe1Ft8U41d2OkyCu6Y7YhBm68m0vZjfg4Ls51aUxpw/viewform"
                 target="_blank" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/layanan.jpg" class="card-img" alt="...">
                     </div>
                 </a>
 
                 <a href="https://kotamadiun.lapor.go.id/" target="_blank"
                     class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/lapor.id_.jpg" class="card-img" alt="...">
                     </div>
                 </a>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/saber-pungli.jpg" class="card-img" alt="...">
                     </div>
                 </div>
@@ -91,28 +90,28 @@ for ($i=0; $i < 3; $i++) { ?>
 
                 <a href="http://lpse.madiunkota.go.id/" target="_blank"
                     class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/lpseslmtf-1.jpg" class="card-img" alt="...">
                     </div>
                 </a>
 
                 <a href="https://elhkpn.kpk.go.id/portal/user/pengumuman_lhkpn/YTNkaEt6UjBjMGxJT0RGR1JuVjVVWEJ5YTBGUE0wdFNlakEwU0ZoMVZYRkZaVWRaUlcxbVpWUkVSRUZTTUVKRk1tZHdNVkpJWjFOb1drVm1OV2N3VXc9PQ=="
                 target="_blank" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/elhkpn.png" class="card-img" alt="...">
                     </div>
                 </a>
 
                 <a href="https://sirup.lkpp.go.id/sirup/home/rekapKldi?idKldi=D179" target="_blank"
                     class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/sirup.jpg" class="card-img" alt="...">
                     </div>
                 </a>
 
                 <a href="https://ula.kemendagri.go.id/" target="_blank"
                     class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/SHIOLA.jpg" class="card-img" alt="...">
                     </div>
                 </a>
@@ -124,25 +123,25 @@ for ($i=0; $i < 3; $i++) { ?>
 
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/rlppd.jpg" class="card-img" alt="...">
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/opd.jpg" class="card-img" alt="...">
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/produk-huk.jpg" class="card-img" alt="...">
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <img src="assets/img/ormas.jpg" class="card-img" alt="...">
                     </div>
                 </div>
@@ -166,7 +165,64 @@ for ($i=0; $i < 3; $i++) { ?>
 
                         <div class="row">
 
-                            
+                            @foreach ($berita_pinned as $bp)
+                    
+                    
+                    
+                            <div class="col-md-4 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-0" style="padding-bottom:30px; padding-left:30px;">
+                
+                                <div class="card" style="width: 30rem;" data-aos="fade-in" data-aos-delay="100">
+                                    <a href="/informasi/{{ $bp->id_berita }}">
+                                     <?php   if($bp->path_foto == null){ ?>
+                                    <img class="card-img-top" src="assets/img/PECELAND-LOGO-VECTOR-980x693.jpg"
+                                        alt="Card image cap"> 
+                                        <?php } else{ ?>
+            
+                                        <img class="card-img-top" src="{{asset("$bp->path_foto")}}"
+                                        alt="Card image cap" style=" object-fit: cover;text-align: center;">
+                                        <?php } ?>
+                                    <div class="card-body">
+                                        <hr>
+                                        <h6 class="card-text">{{  $bp->judul }}</h6>
+                                        <p  style="color:black;"> <small>by {{ $bp->name }} | {{ date('d M Y', strtotime($bp->created_at)) }} | {{ $bp->array_kategori }}</small> </p>
+                                        <p class="btn btn-info position-absolute top-0 end-0" style="color:rgb(0, 0, 0); "> <i class="bx bxs-pin " style="color:black"></i> Pinned</p> 
+                         
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+               
+                               
+                                
+                            @endforeach
+                                @foreach ($berita as $berita)
+                                
+                                
+                                
+                                <div class="col-md-4 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-0" style="padding-bottom:30px; padding-left:30px;">
+                    
+                                    <div class="card" style="width: 30rem;" data-aos="fade-in" data-aos-delay="100">
+                                        <a href="/informasi/{{ $berita->id_berita }}">
+                                         <?php   if($berita->path_foto == null){ ?>
+                                        <img class="card-img-top" src="assets/img/PECELAND-LOGO-VECTOR-980x693.jpg"
+                                            alt="Card image cap"> 
+                                            <?php } else{ ?>
+            
+                                            <img class="card-img-top" src="{{asset("$berita->path_foto")}}"
+                                            alt="Card image cap" style=" object-fit: cover;text-align: center;">
+                                            <?php } ?>
+                                        <div class="card-body">
+                                            <hr>
+                                            <h6 class="card-text">{{  $berita->judul }}</h6>
+                                            <p  style="color:black;"> <small>by {{ $berita->name }} | {{ date('d M Y', strtotime($berita->created_at)) }} | {{ $berita->array_kategori }}</small> </p>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                   
+                                   
+                                    
+                                @endforeach
                                 
             
             
@@ -181,9 +237,7 @@ for ($i=0; $i < 3; $i++) { ?>
     
                         <div class="card border-0" style="width: 18rem; height:20%">
                            
-                            <!-- <script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script> -->
-
-                            
+                            <script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script>
 
                             <div id="gpr-kominfo-widget-container" data-aos="fade-in" data-aos-delay="100" style="min-width:300px; max-width:780px;best-width:500px "></div>
                          
@@ -527,7 +581,26 @@ for ($i=0; $i < 3; $i++) { ?>
                 <div class="swiper-wrapper">
                   
 
-                    
+                    @foreach ($tabloid as $tabloid)
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            @if ($tabloid->path_foto == null)
+                            <img style="width: 20rem;"  class="card-img-top" src="assets/img/PECELAND-LOGO-VECTOR-980x693.jpg"
+                            alt="Card image cap">
+                            @else
+                            <img   style="width: 20rem;"  class="card-img-top" src="{{asset("$tabloid->path_foto")}}"
+                            alt="Card image cap">
+                            @endif
+                           
+                       <hr>
+                       <a href="/informasi/{{ $tabloid->id_berita }}"> <p style="color:black"> 
+                                <strong>{{ $tabloid->judul }} <br> </strong><small>by {{ $tabloid->name }} | {{ date('d M Y', strtotime($tabloid->created_at)) }} </small>
+                            </p></a>
+                           
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    @endforeach
 
                   
 
