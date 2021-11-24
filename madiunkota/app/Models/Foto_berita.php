@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Foto_berita extends Model
+class foto_berita extends Model
 {
     use HasFactory;
     public $timestamps = false;

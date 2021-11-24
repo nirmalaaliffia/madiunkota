@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Alamat_opd extends Model
+class alamat_opd extends Model
 {
     // use HasFactory;
     protected $guarded = [];
