@@ -9,6 +9,20 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
+    <!-- Favicons -->
+    <link href="{{ asset('assets/img/Lambang_Kota_Madiun.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/Lambang_Kota_Madiun.png') }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="{{ asset('template_login/css_font.css') }}"
+        rel="stylesheet">
+
+
+    <!-- Template Main CSS File -->
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('template_login/jquery.dataTables.min.css') }}">
+
     <!-- =======================================================
   * Template Name: Squadfree - v4.6.0
   * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
