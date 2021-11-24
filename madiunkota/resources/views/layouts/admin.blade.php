@@ -9,7 +9,7 @@
   <link href="{{ asset('assets/img/Lambang_Kota_Madiun.png') }}" rel="icon">
   <link href="{{ asset('assets/img/Lambang_Kota_Madiun.png') }}" rel="apple-touch-icon">
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  {{-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('template_admin/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- Ionicons -->
@@ -37,7 +37,7 @@
     <!-- BS Stepper -->
     <link rel="stylesheet" href="{{ asset('template_admin/plugins/bs-stepper/css/bs-stepper.min.css') }}">
     <!-- dropzonejs -->
-    <link rel="stylesheet" href="{{ asset('template_admin/plugins/dropzone/min/dropzone.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('template_admin/plugins/dropzone/min/dropzone.min.css') }}"> --}}
 
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
