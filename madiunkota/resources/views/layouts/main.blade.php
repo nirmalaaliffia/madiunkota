@@ -19,12 +19,12 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{ asset('assets/template_home/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/template_home/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/template_home/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/template_home/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/template_home/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/template_home/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
