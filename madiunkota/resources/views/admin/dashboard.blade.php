@@ -17,7 +17,8 @@
               <p>Jumlah Berita</p>
             </div>
             <div class="icon">
-              <box-icon name='news' type='solid' color='#ffffff' ></box-icon>
+          
+              <box-icon name='news' class="nav-icon" type='solid' color='#ffffff' ></box-icon>
             </div>
            
           </div>
