@@ -19,7 +19,7 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-                    <li class="dropdown"><a href="#" style="{color: white; } :hover {background: #faed27}"  class="nav-link {{ ($parent === "berita") ? 'active':'' }}"><span>Berita</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#" style="{color: white; } :hover {color: #faed27}"  class="nav-link {{ ($parent === "berita") ? 'active':'' }}"><span>Berita</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="/informasi">Informasi</a></li>                   
                             <li><a href="/kegiatan">Kegiatan Pemkot Madiun</a></li>
