@@ -5,11 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ipkd extends Model
+class File_berita extends Model
 {
     use HasFactory;
+    public $timestamps = false;
 
+    
     protected $fillable = [
-        'id', 'nama_file', 'path_file', 'created_at','updated_at' 
+        'id', 'path_file', 'id_berita', 'nama_file'
     ];
 }

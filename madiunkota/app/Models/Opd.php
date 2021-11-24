@@ -5,9 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class bidang_opd extends Model
+class Opd extends Model
 {
     use HasFactory;
+
     public $timestamps = false;
 
 
@@ -15,6 +16,9 @@ class bidang_opd extends Model
     // public $increment = false;
 
     protected $fillable = [
-        'id', 'nama_bidang'
+        'id', 'nama_opd', 'id_bidang', 'alamat_opd', 'no_telp', 'no_fax'
     ];
+    
+
+  
 }

@@ -5,13 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class file_berita extends Model
+class Bidang_opd extends Model
 {
     use HasFactory;
     public $timestamps = false;
 
-    
+
+    // protected $primaryKey= null;
+    // public $increment = false;
+
     protected $fillable = [
-        'id', 'path_file', 'id_berita', 'nama_file'
+        'id', 'nama_bidang'
     ];
 }
