@@ -35,7 +35,7 @@ for ($i=0; $i < 3; $i++) { ?>
         <h1>Pemerintah <span>Kota Madiun</span></h1>
         
 
-        <a href="#services" class="btn-get-started scrollto"><box-icon name='chevrons-down' color='#ffffff' ></box-icon></a>
+        <a href="#services" class="btn-get-started scrollto"><box-icon name='chevrons-down' type='solid' color='#ffffff' ></box-icon></a>
     </div>
 </section><!-- End Hero -->
 
