@@ -110,7 +110,7 @@
 <script src="{{ asset('template_admin/dist/js/demo.js') }}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('template_admin/dist/js/pages/dashboard.js') }}"></script>
-
+<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 <!-- Select2 -->
 <script src="{{ asset('template_admin/plugins/select2/js/select2.full.min.js') }}"></script>
 <!-- Bootstrap4 Duallistbox -->
