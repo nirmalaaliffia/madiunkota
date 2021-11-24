@@ -237,7 +237,7 @@ for ($i=0; $i < 3; $i++) { ?>
     
                         <div class="card border-0" style="width: 18rem; height:20%">
                            
-                            <script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script>
+                            
 
                             <div id="gpr-kominfo-widget-container" data-aos="fade-in" data-aos-delay="100" style="min-width:300px; max-width:780px;best-width:500px "></div>
                          
@@ -697,3 +697,11 @@ for ($i=0; $i < 3; $i++) { ?>
 
 </main><!-- End #main -->
 @endsection
+@push('script')
+
+<script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script>
+        
+
+
+    
+@endpush
