@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use App\Models\Berita;
-use App\Models\foto_berita;
+use App\Models\Foto_berita;
 use Illuminate\Http\Request;
 use App\Models\Berita_kategori;
 use Illuminate\Routing\Controller;

@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\ipkd;
+use App\Models\Ipkd;
 use App\Models\Berita;
 use GuzzleHttp\Client;
-use App\Models\kategori;
-use App\Models\foto_berita;
+use App\Models\Kategori;
+use App\Models\Foto_berita;
 use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;

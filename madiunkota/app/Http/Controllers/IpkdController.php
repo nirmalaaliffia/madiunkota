@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ipkd;
+use App\Models\Ipkd;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;

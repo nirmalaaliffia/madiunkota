@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\berita_kategori;
+use App\Models\Berita_kategori;
 use Illuminate\Http\Request;
 
 class BeritaKategoriController extends Controller

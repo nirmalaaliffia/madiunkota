@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\foto_berita;
+use App\Models\Foto_berita;
 use Illuminate\Http\Request;
 
 class FotoBeritaController extends Controller

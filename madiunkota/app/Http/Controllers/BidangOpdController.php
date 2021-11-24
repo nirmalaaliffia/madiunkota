@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\bidang_opd;
+use App\Models\Bidang_opd;
 use Illuminate\Http\Request;
 
 class BidangOpdController extends Controller
