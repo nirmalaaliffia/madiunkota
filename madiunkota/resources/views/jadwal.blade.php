@@ -66,9 +66,9 @@
                             <td style="width:8%; text-align: center;">
 
                                 {{-- kurang api get by ID --}}
-                                <button type="button" class="btn btn-xs btn-warning" data-entry="{{ $data_rapat["data"]["$i"]["id"] }}" data-toggle="modal" data-target="#modal_edit_user" >
+                                {{-- <button type="button" class="btn btn-xs btn-warning" data-entry="{{ $data_rapat["data"]["$i"]["id"] }}" data-toggle="modal" data-target="#modal_edit_user" >
                                     <i class="bx bx-show"></i>
-                                </button>
+                                </button> --}}
 
                             
                             </td>
