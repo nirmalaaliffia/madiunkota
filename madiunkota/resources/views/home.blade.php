@@ -541,7 +541,7 @@ for ($i=0; $i < 3; $i++) { ?>
                 <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <a  target="_blank" href="https://www.youtube.com/c/PemerintahKotaMadiun"> <box-icon name='youtube' type='logo' ></box-icon>Youtube </a>
+                        <a  target="_blank" href="https://www.youtube.com/c/PemerintahKotaMadiun"><i class='bx bxl-youtube' style='color:#ff0000'  ></i>Youtube </a>
                     </div>
                 </div>
                 </div>
