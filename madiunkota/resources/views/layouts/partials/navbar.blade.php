@@ -57,6 +57,7 @@
                             <li><a href="https://hargapangan.id/" target="_blank">Tabel Harga Berdasarkan Daerah Harapanpangan.id</a></li>
                         </ul>
                     </li>
+                    <li><a href="https://edu.madiunkota.go.id/" target="_blank" >Edu</a></li>
                     <li><a style="color: white; " class="nav-link {{ ($parent === "jadwal_rapat") ? 'active':'' }}" href="/jadwal">Jadwal Rapat</a></li>
                     {{-- <li><a class="nav-link scrollto {{ ($parent === "kontak") ? 'active':'' }}" href="/#contact">Kontak</a></li> --}}
                    

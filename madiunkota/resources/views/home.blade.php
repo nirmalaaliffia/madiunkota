@@ -227,7 +227,7 @@ for ($i=0; $i < 3; $i++) { ?>
             
             
                                <a href="/berita"> <button class="btn btn-xs btn-info btn_view" style="border-radius: 20px;" >
-                                    <i class="bx bx-grid-alt"></i> Berita Lainnya
+                                <box-icon name='grid-alt'></box-icon> Berita Lainnya
                                 </button></a>
             
                         </div>
@@ -415,7 +415,7 @@ for ($i=0; $i < 3; $i++) { ?>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"> <strong><a target="_blank"  href="https://madiuntoday.id/">@Madiuntoday </a></strong></li>
                         <li class="list-group-item"><strong><a  target="_blank" href="https://ekinerja.madiunkota.go.id/">E-Kinerja Kota Madiun </a></strong></li>
-                        <li class="list-group-item"><strong><a  target="_blank" href="https://kotamadiun.jdih.jatimprov.go.id/">JDIH</a></strong></li>
+                        <li class="list-group-item"><strong><a  target="_blank" href="https://jdih.madiunkota.go.id">JDIH</a></strong></li>
                         <li class="list-group-item"><strong><a target="_blank"  href="https://madiunkota.bps.go.id/">BPS Kota Madiun</a></strong></li>
                         <li class="list-group-item"><strong><a  target="_blank" href="https://bankdaerah.madiunkota.go.id/">PD. BPR BANK DAERAH</a></strong></li>
                         <li class="list-group-item"><strong><a  target="_blank" href="http://umkm.madiunkota.go.id/">UMKM Kota Madiun</a></strong></li>
@@ -540,7 +540,9 @@ for ($i=0; $i < 3; $i++) { ?>
                 </h2>
                 <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content </div>
+                    <div class="accordion-body">
+                        <a  target="_blank" href="https://www.youtube.com/c/PemerintahKotaMadiun"> <box-icon name='youtube' type='logo' ></box-icon> </a>
+                    </div>
                 </div>
                 </div>
             </td>
