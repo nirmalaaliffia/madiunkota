@@ -709,7 +709,7 @@ for ($i=0; $i < 3; $i++) { ?>
 @endsection
 @push('script')
 <script>
-    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?48385';
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?1378';
     var s = document.createElement('script');
     s.type = 'text/javascript';
     s.async = true;
@@ -722,8 +722,8 @@ for ($i=0; $i < 3; $i++) { ?>
       "borderRadius":"25",
       "marginLeft":"50",
       "marginBottom":"50",
-      "marginRight":"50",
-      "position":"left"
+      "marginRight":"150",
+      "position":"right"
   },
   "brandSetting":{
       "brandName":"Pemerintah Kota Madiun",
