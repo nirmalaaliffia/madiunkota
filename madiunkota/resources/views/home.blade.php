@@ -227,7 +227,7 @@ for ($i=0; $i < 3; $i++) { ?>
             
             
                                <a href="/berita"> <button class="btn btn-xs btn-info btn_view" style="border-radius: 20px;" >
-                                <box-icon name='grid-alt'></box-icon> Berita Lainnya
+                                 Berita Lainnya
                                 </button></a>
             
                         </div>
@@ -541,7 +541,7 @@ for ($i=0; $i < 3; $i++) { ?>
                 <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <a  target="_blank" href="https://www.youtube.com/c/PemerintahKotaMadiun"> <box-icon name='youtube' type='logo' ></box-icon> </a>
+                        <a  target="_blank" href="https://www.youtube.com/c/PemerintahKotaMadiun"> <box-icon name='youtube' type='logo' ></box-icon>Youtube </a>
                     </div>
                 </div>
                 </div>
