@@ -47,8 +47,7 @@
 
     @yield('container')
 
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-cf308ac4-77d9-4013-b9ab-c96a18ce6e53"></div>
+   
     <!-- End #container -->
 
 

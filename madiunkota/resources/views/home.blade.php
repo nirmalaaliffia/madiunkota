@@ -27,9 +27,7 @@ for ($i=0; $i < 3; $i++) { ?>
 @section('container')
 <section id="hero">
     <div class="hero-container" data-aos="fade-up">
-        {{-- <div class="whatsapp_float" style="position:fixed;bottom:40px;right20px;left0px;">
-            
-        </div> --}}
+      
         <img src="assets/img/THMNAIL.png">
         <h1>Website Resmi</h1>
         <h1>Pemerintah <span>Kota Madiun</span></h1>
@@ -706,7 +704,7 @@ for ($i=0; $i < 3; $i++) { ?>
 @endsection
 @push('script')
 <script>
-    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?28442';
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?11706';
     var s = document.createElement('script');
     s.type = 'text/javascript';
     s.async = true;
@@ -717,7 +715,7 @@ for ($i=0; $i < 3; $i++) { ?>
       "backgroundColor":"#4dc247",
       "ctaText":"Hubungi Kami",
       "borderRadius":"25",
-      "marginLeft":"0",
+      "marginLeft":"50",
       "marginBottom":"50",
       "marginRight":"50",
       "position":"left"
@@ -741,5 +739,4 @@ for ($i=0; $i < 3; $i++) { ?>
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
 </script>
-    
 @endpush
