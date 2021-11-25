@@ -569,7 +569,7 @@ for ($i=0; $i < 3; $i++) { ?>
 
             <div class="text-center">
                 <h3>Live Update Pemerintah Kota Madiun</h3>
-                <img src="{{ asset('assets/img/bg8.JPG') }}"></img>
+                <img src="{{ asset('assets/img/THMNAIL.png') }}"></img>
                 <!-- <a class="cta-btn" href="#">Live Update Pemerintah Kota Madiun</a> -->
             </div>
 
