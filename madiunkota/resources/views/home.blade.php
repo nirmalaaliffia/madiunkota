@@ -27,9 +27,9 @@ for ($i=0; $i < 3; $i++) { ?>
 @section('container')
 <section id="hero">
     <div class="hero-container" data-aos="fade-up">
-        <div class="whatsapp_float" style="position:fixed;bottom:40px;right20px;left0px;">
+        {{-- <div class="whatsapp_float" style="position:fixed;bottom:40px;right20px;left0px;">
             
-        </div>
+        </div> --}}
         <img src="assets/img/THMNAIL.png">
         <h1>Website Resmi</h1>
         <h1>Pemerintah <span>Kota Madiun</span></h1>
@@ -541,7 +541,10 @@ for ($i=0; $i < 3; $i++) { ?>
                 <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <a  target="_blank" href="https://www.youtube.com/c/PemerintahKotaMadiun"><i class='bx bxl-youtube' style='color:#ff0000'  ></i>Youtube </a>
+                        <a  target="_blank" href="https://www.youtube.com/c/PemerintahKotaMadiun">Youtube </a>
+                        <a  target="_blank" href="https://twitter.com/pemkotmadiun_">Twitter </a>
+                        <a  target="_blank" href="https://www.facebook.com/pemkotmadiun">Facebook </a>
+                        <a  target="_blank" href="https://www.instagram.com/pemkotmadiun_/">Instagram </a>
                     </div>
                 </div>
                 </div>
@@ -701,11 +704,42 @@ for ($i=0; $i < 3; $i++) { ?>
 
 </main><!-- End #main -->
 @endsection
-{{-- @push('script')
-
-<script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script>
-        
-
-
+@push('script')
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?28442';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"Hubungi Kami",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"left"
+  },
+  "brandSetting":{
+      "brandName":"Pemerintah Kota Madiun",
+      "brandSubTitle":"Online",
+      "brandImg":"https://res.cloudinary.com/dqxd4cmee/image/upload/v1636618596/300_pjeeeb.png",
+      "welcomeText":"Halo👋\nAda yang bisa kami bantu?",
+      "messageText":"Halo👋%0AAda yang bisa kami bantu?",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"628113135700"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
     
-@endpush --}}
+@endpush
