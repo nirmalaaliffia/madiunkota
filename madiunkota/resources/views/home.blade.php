@@ -539,10 +539,15 @@ for ($i=0; $i < 3; $i++) { ?>
                 <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <a  target="_blank" href="https://www.youtube.com/c/PemerintahKotaMadiun">Youtube </a>
-                        <a  target="_blank" href="https://twitter.com/pemkotmadiun_">Twitter </a>
-                        <a  target="_blank" href="https://www.facebook.com/pemkotmadiun">Facebook </a>
-                        <a  target="_blank" href="https://www.instagram.com/pemkotmadiun_/">Instagram </a>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"> <a target="_blank"  href="https://www.youtube.com/c/PemerintahKotaMadiun">Youtube</a></li>
+                            <li class="list-group-item"> <a target="_blank" href="https://twitter.com/pemkotmadiun_">Twitter</a></li>
+                          <li class="list-group-item"> <a  target="_blank" href="https://www.facebook.com/pemkotmadiun">Facebook</a></li>
+                          <li class="list-group-item"> <a  target="_blank" href="https://www.instagram.com/pemkotmadiun_/">Instagram </a></li>
+
+                        
+                          </ul>
+                      
                     </div>
                 </div>
                 </div>
@@ -704,7 +709,7 @@ for ($i=0; $i < 3; $i++) { ?>
 @endsection
 @push('script')
 <script>
-    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?11706';
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?48385';
     var s = document.createElement('script');
     s.type = 'text/javascript';
     s.async = true;
@@ -725,7 +730,7 @@ for ($i=0; $i < 3; $i++) { ?>
       "brandSubTitle":"Online",
       "brandImg":"https://res.cloudinary.com/dqxd4cmee/image/upload/v1636618596/300_pjeeeb.png",
       "welcomeText":"Halo👋\nAda yang bisa kami bantu?",
-      "messageText":"Halo👋%0AAda yang bisa kami bantu?",
+      "messageText":"Halo👋%0Asaya (ketikkan nama) dari (kecamatan , kelurahan , rt, rw) KOTA MADIUN perlu bantuan untuk permasalahan gawat darurat yaitu ....",
       "backgroundColor":"#0a5f54",
       "ctaText":"Start Chat",
       "borderRadius":"25",
