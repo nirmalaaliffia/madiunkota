@@ -224,7 +224,7 @@ for ($i=0; $i < 3; $i++) { ?>
                                 
             
             
-                               <a href="/berita"> <button class="btn btn-xs btn-primary btn_view" style="border-radius: 20px;" >
+                               <a href="/berita"> <button class="btn btn-xs btn-success btn_view" style="border-radius: 20px;" >
                                  Berita Lainnya
                                 </button></a>
             
