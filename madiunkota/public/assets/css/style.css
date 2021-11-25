@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 998;
-  background: #67b0d1;
+  background: #2f4d5a;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #86c0da;
+  background: #5b7e8d;
   color: #fff;
 }
 .back-to-top.active {
@@ -638,7 +638,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(86, 150, 102, 0.63), rgba(86, 150, 102, 0.8)), url("../img/bg8.JPG") fixed center center;
+  background: linear-gradient(rgba(136, 163, 143, 0.63), rgba(185, 202, 189, 0.8)), url("../img/bg8.JPG") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
