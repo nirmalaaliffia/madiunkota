@@ -60,6 +60,10 @@ RUN sed -i -e 's/;extension=pdo_pgsql/extension=pdo_pgsql/' /usr/local/etc/php/p
 WORKDIR /code
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer 
 
+
+RUN echo "post_max_size=0" >> /usr/local/etc/php/conf.d/docker-php-ext-post_max_size.ini
+RUN echo "upload_max_filesize=0" >> /usr/local/etc/php/conf.d/docker-php-ext-upload_max_filesize.ini
+
 # ADD . /code
 # RUN chown -R www-data:www-data /code/
 
