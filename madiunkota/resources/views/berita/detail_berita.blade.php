@@ -81,6 +81,23 @@
                     @endforeach
                     @endif
 
+                    @if ($berita->deskripsi_pdf)
+                        
+                    <div class="col">
+                        <div class="card border-0" style="display:auto; text-align:center; align:center;">
+                            <iframe src="{{ $berita->deskripsi }}"
+                                style="width:80%;height:600px;margin: 0 auto;"></iframe>
+                            <div class="card-body">
+                                <a href="{{ $berita->deskripsi }}"><button type="button"
+                                        class="btn btn-xs btn-success">
+                                        <i class="bx bx-download"></i> Unduh File
+                                    </button></a> <br>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    @endif
 
 
                     <br>

@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="{{ asset('template_admin/plugins/bs-stepper/css/bs-stepper.min.css') }}">
     <!-- dropzonejs -->
     <link rel="stylesheet" href="{{ asset('template_admin/plugins/dropzone/min/dropzone.min.css') }}">
-    <script src="https://kit.fontawesome.com/76ab537f22.js" crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
 </head>
@@ -110,7 +110,7 @@
 <script src="{{ asset('template_admin/dist/js/demo.js') }}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('template_admin/dist/js/pages/dashboard.js') }}"></script>
-<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+
 <!-- Select2 -->
 <script src="{{ asset('template_admin/plugins/select2/js/select2.full.min.js') }}"></script>
 <!-- Bootstrap4 Duallistbox -->

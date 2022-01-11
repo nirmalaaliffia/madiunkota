@@ -13,7 +13,11 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Client\Response;
+use Illuminate\Pagination\Paginator;
 use GuzzleHttp\Exception\RequestException;
+use Symfony\Component\Console\Input\Input;
+use Illuminate\Pagination\LengthAwarePaginator;
+
 
 class HomeController extends Controller
 {
@@ -67,7 +71,7 @@ class HomeController extends Controller
         order by b.created_at DESC"));
 
 
-        $berita= DB::select(DB::raw("select b.id as id_berita,b.deskripsi, u.name , b.judul , b.created_at , a.foto, a.path_foto, k.array_kategori
+        $berita= DB::select(DB::raw("select b.id as id_berita,b.deskripsi, u.name , b.judul , b.created_at , a.foto, a.path_foto, k.array_kategori, a.status_path
         from beritas b 
          join ( select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
                     from berita_kategoris bk 
@@ -75,10 +79,13 @@ class HomeController extends Controller
                     group by bk.id_berita
                 ) k using (id)
            left join (
-            select distinct on (fb.id_berita ) fb.id_berita ,fb.nama_foto as foto, fb.path_foto as path_foto
+            select distinct on (fb.id_berita ) fb.id_berita ,fb.nama_foto as foto, fb.path_foto as path_foto,
+            case when fb.nama_foto ~* '(.jpg|.png|.jpeg)' then 'link_madiunkota'
+        		when fb.path_foto  ~* '(.jpg|.png|.jpeg)' then 'link_portal' 
+        		else 'null'
+        		end as status_path
             from foto_beritas fb 
             join beritas b2 on b2.id = fb.id_berita
-            where fb.nama_foto similar to '%(.jpg|.png|.jpeg)%'
            )as a  on b.id =a.id_berita
         join users u on u.id =b.id_pengirim
         where b.status_publish =1 and b.status_pinned=0
@@ -159,23 +166,27 @@ class HomeController extends Controller
         ]);
     }
 
-    public function show_berita(){
-        $berita= DB::select(DB::raw("select b.id as id_berita,b.deskripsi, u.name , b.judul , b.created_at , a.foto, a.path_foto, k.array_kategori
-        from beritas b 
-         join ( select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
-                    from berita_kategoris bk 
-                    join kategoris k on k.id =bk.id_kategori
-                    group by bk.id_berita
-                ) k using (id)
-           left join (
-            select distinct on (fb.id_berita ) fb.id_berita ,fb.nama_foto as foto, fb.path_foto as path_foto
-            from foto_beritas fb 
-            join beritas b2 on b2.id = fb.id_berita
-            where fb.nama_foto similar to '%(.jpg|.png|.jpeg)%'
-           )as a  on b.id =a.id_berita
-        join users u on u.id =b.id_pengirim
-        order by b.created_at DESC"));
+    public function show_berita(Request $request){
 
+        
+        // $berita= DB::select(DB::raw("select b.id as id_berita,b.deskripsi, u.name , b.judul , b.created_at , a.foto, a.path_foto, k.array_kategori
+        // from beritas b 
+        //  join ( select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
+        //             from berita_kategoris bk 
+        //             join kategoris k on k.id =bk.id_kategori
+        //             group by bk.id_berita
+        //         ) k using (id)
+        //    left join (
+        //     select distinct on (fb.id_berita ) fb.id_berita ,fb.nama_foto as foto, fb.path_foto as path_foto
+        //     from foto_beritas fb 
+        //     join beritas b2 on b2.id = fb.id_berita
+        //     where fb.nama_foto similar to '%(.jpg|.png|.jpeg)%'
+        //    )as a  on b.id =a.id_berita
+        // join users u on u.id =b.id_pengirim
+        // order by b.created_at DESC"));
+
+        $berita = DB::table('berita_all')->paginate(15);
+    
         return view('berita/berita',[
             "title" => "Berita",
            "parent" => "Home",
@@ -184,9 +195,14 @@ class HomeController extends Controller
         ]);
     }
 
+ 
+
+
     public function show_detail_berita($id){
 
-        $berita=DB::select(DB::raw("select b.id as id_berita,b.deskripsi, u.name , b.judul , b.deskripsi , b.created_at , a.foto, a.path_foto, k.array_kategori
+        $berita=DB::select(DB::raw("select b.id as id_berita,b.deskripsi, u.name , b.judul , b.deskripsi , b.created_at , a.foto, a.path_foto, k.array_kategori,
+	    case when b.deskripsi ~* '.*pdf-embedder*.' then 'link_pdf'
+        else null end as deskripsi_pdf
         from beritas b 
          join ( select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
                     from berita_kategoris bk 
@@ -692,6 +708,11 @@ class HomeController extends Controller
             "stats" => $stats_foto,
             "stats_file" => $stats_file
         ]);
+    }
+
+
+    public function filter_berita(Request $request){
+        return $request;
     }
 
    

@@ -24,25 +24,25 @@ class BeritaController extends Controller
      */
     public function index()
     {
-        $berita= DB::select(DB::raw("select b.id as id_berita, u.name, b.judul , b.status_pinned, b.created_at , a.foto, a.path_foto, k.array_kategori,
-        case 
-               when (b.status_publish = '1') then 'Terlihat' 
-               when (b.status_publish = '0' ) then 'Disembunyikan' end as status_publish 
-       from beritas b 
-        join (
-                   select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
-                   from berita_kategoris bk 
-                   join kategoris k on k.id =bk.id_kategori
-                   group by bk.id_berita
-               ) k using (id)
-          left join (
-                      select fb.id_berita, fb.nama_foto as foto, fb.path_foto as path_foto
-                   from foto_beritas fb 
-                   join beritas b2 on b2.id = fb.id_berita
-                   limit 1
-          )as a  on b.id =a.id_berita
-       join users u on u.id =b.id_pengirim order by b.created_at DESC "));
-
+    //     $berita= DB::select(DB::raw("select b.id as id_berita, u.name, b.judul , b.status_pinned, b.created_at , a.foto, a.path_foto, k.array_kategori,
+    //     case 
+    //            when (b.status_publish = '1') then 'Terlihat' 
+    //            when (b.status_publish = '0' ) then 'Disembunyikan' end as status_publish 
+    //    from beritas b 
+    //     join (
+    //                select bk.id_berita as id, array_to_string( array_agg(k.jenis_kategori ),', ') as array_kategori
+    //                from berita_kategoris bk 
+    //                join kategoris k on k.id =bk.id_kategori
+    //                group by bk.id_berita
+    //            ) k using (id)
+    //       left join (
+    //                   select fb.id_berita, fb.nama_foto as foto, fb.path_foto as path_foto
+    //                from foto_beritas fb 
+    //                join beritas b2 on b2.id = fb.id_berita
+    //                limit 1
+    //       )as a  on b.id =a.id_berita
+    //    join users u on u.id =b.id_pengirim order by b.created_at DESC "));
+        $berita = DB::table('berita_all')->paginate(15);
         $list_kategori = DB::select(DB::raw("select * from kategoris order by kategoris.id ASC"));
 
        
@@ -50,7 +50,7 @@ class BeritaController extends Controller
         return view('admin/daftar_berita', [
             "title" => "Daftar Berita",
             "parent" => "berita",
-            "berita" => $berita,
+            "beritas" => $berita,
             "list_kategori" => $list_kategori,
             "child" => "",
             "root_parent" => "/admin",
@@ -332,6 +332,7 @@ class BeritaController extends Controller
     //     return $berita;
         Foto_berita::where('foto_beritas.id', '=', $id_file)
          ->delete();
+       
 
         
 

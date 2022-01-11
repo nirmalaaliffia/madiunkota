@@ -81,9 +81,9 @@
                     </thead>
                     <tbody>
                         <?php  $no=1; ?>
-                        @foreach ($berita as $berita)
+                        @foreach ($beritas as $berita)
                         <tr>
-                            <td>{{  $no; }}</td>
+                            <td>{{ ($beritas->currentPage() - 1) * $beritas->perPage() + $loop->iteration }}</td>
                             <td>{{ $berita->judul }}</td>
                             <td style="word-break: break-all">{{ $berita->array_kategori }}</td>
                             <td>{{ date('d M Y', strtotime($berita->created_at)) }}</td>
@@ -132,12 +132,12 @@
 
                     </tfoot>
                 </table>
-
-
-
+              
+<br>
+                <div>{{ $beritas->links() }}</div>
 
             </div>
-
+           
         </div>
 
   
@@ -361,11 +361,11 @@
 
 @push('scripts')
 <script ttype="text/javascript">
-$(document).ready(function() {
-    $('#daftar_berita').DataTable();
+// $(document).ready(function() {
+//     $('#daftar_berita').DataTable();
 
 
-} );
+// } );
 
 
 // $(function(){
