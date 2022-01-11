@@ -35,6 +35,7 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('informasi/{id}', [HomeController::class, 'show_detail_berita']);
+Route::post('berita/filter_berita', [HomeController::class, 'filter_berita']);
 
 Route::get('/file-download/{file}', [HomeController::class, 'download_file']);
 

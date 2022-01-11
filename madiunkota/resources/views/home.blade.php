@@ -8,7 +8,7 @@
 <?php 
 for ($i=0; $i < 3; $i++) { ?>
            
-           <span style="color:#faed27">
+           <span style="color:#39FF14">
         
        <?php     echo "Agenda Terdekat : ".$agenda['data'][$i]['judul_rapat']." - ";
             echo $agenda['data'][$i]['lokasi_rapat']." - "; 
@@ -27,13 +27,15 @@ for ($i=0; $i < 3; $i++) { ?>
 @section('container')
 <section id="hero">
     <div class="hero-container" data-aos="fade-up">
-       
+        <div class="whatsapp_float" style="position:fixed;bottom:40px;right20px;left0px;">
+            
+        </div>
         <img src="assets/img/THMNAIL.png">
         <h1>Website Resmi</h1>
         <h1>Pemerintah <span>Kota Madiun</span></h1>
         
 
-        <a href="#services" class="btn-get-started scrollto"><box-icon name='chevrons-down' type='solid' color='#ffffff' ></box-icon></a>
+        <a href="#services" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
     </div>
 </section><!-- End Hero -->
 
@@ -414,7 +416,7 @@ for ($i=0; $i < 3; $i++) { ?>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"> <strong><a target="_blank"  href="https://madiuntoday.id/">@Madiuntoday </a></strong></li>
                         <li class="list-group-item"><strong><a  target="_blank" href="https://ekinerja.madiunkota.go.id/">E-Kinerja Kota Madiun </a></strong></li>
-                        <li class="list-group-item"><strong><a  target="_blank" href="https://jdih.madiunkota.go.id">JDIH</a></strong></li>
+                        <li class="list-group-item"><strong><a  target="_blank" href="https://kotamadiun.jdih.jatimprov.go.id/">JDIH</a></strong></li>
                         <li class="list-group-item"><strong><a target="_blank"  href="https://madiunkota.bps.go.id/">BPS Kota Madiun</a></strong></li>
                         <li class="list-group-item"><strong><a  target="_blank" href="https://bankdaerah.madiunkota.go.id/">PD. BPR BANK DAERAH</a></strong></li>
                         <li class="list-group-item"><strong><a  target="_blank" href="http://umkm.madiunkota.go.id/">UMKM Kota Madiun</a></strong></li>
@@ -539,17 +541,7 @@ for ($i=0; $i < 3; $i++) { ?>
                 </h2>
                 <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"> <a target="_blank"  href="https://www.youtube.com/c/PemerintahKotaMadiun">Youtube</a></li>
-                            <li class="list-group-item"> <a target="_blank" href="https://twitter.com/pemkotmadiun_">Twitter</a></li>
-                          <li class="list-group-item"> <a  target="_blank" href="https://www.facebook.com/pemkotmadiun">Facebook</a></li>
-                          <li class="list-group-item"> <a  target="_blank" href="https://www.instagram.com/pemkotmadiun_/">Instagram </a></li>
-
-                        
-                          </ul>
-                      
-                    </div>
+                    <div class="accordion-body">Placeholder content </div>
                 </div>
                 </div>
             </td>
@@ -570,7 +562,7 @@ for ($i=0; $i < 3; $i++) { ?>
 
             <div class="text-center">
                 <h3>Live Update Pemerintah Kota Madiun</h3>
-                <img src="{{ asset('assets/img/THMNAIL.png') }}"></img>
+                <img src="assets/img/THMNAIL.png"></img>
                 <!-- <a class="cta-btn" href="#">Live Update Pemerintah Kota Madiun</a> -->
             </div>
 
@@ -708,41 +700,3 @@ for ($i=0; $i < 3; $i++) { ?>
 
 </main><!-- End #main -->
 @endsection
-@push('script')
-<script>
-    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?35028';
-    var s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = url;
-    var options = {
-  "enabled":true,
-  "chatButtonSetting":{
-      "backgroundColor":"#4dc247",
-      "ctaText":"Hubungi Kami",
-      "borderRadius":"25",
-      "marginLeft":"50",
-      "marginBottom":"50",
-      "marginRight":"100",
-      "position":"right"
-  },
-  "brandSetting":{
-      "brandName":"Pemerintah Kota Madiun",
-      "brandSubTitle":"Online",
-      "brandImg":"https://res.cloudinary.com/dqxd4cmee/image/upload/v1636618596/300_pjeeeb.png",
-      "welcomeText":"Halo👋\nAda yang bisa kami bantu?",
-      "messageText":"Halo👋%0Asaya (ketikkan nama) dari (kecamatan , kelurahan , rt, rw) KOTA MADIUN perlu bantuan untuk permasalahan gawat darurat yaitu ....",
-      "backgroundColor":"#0a5f54",
-      "ctaText":"Start Chat",
-      "borderRadius":"25",
-      "autoShow":false,
-      "phoneNumber":"628113135700"
-  }
-};
-    s.onload = function() {
-        CreateWhatsappChatWidget(options);
-    };
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-</script>
-@endpush
