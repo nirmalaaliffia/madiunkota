@@ -25,7 +25,7 @@
     {{-- <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet"> --}}
     <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
@@ -47,7 +47,8 @@
 
     @yield('container')
 
-   
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-cf308ac4-77d9-4013-b9ab-c96a18ce6e53"></div>
     <!-- End #container -->
 
 
@@ -91,20 +92,24 @@
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Link Terkait</h4>
                         <ul>
-                            <li><box-icon name='chevrons-right' type='solid' color='#ffffff' ></box-icon> <a href="https://madiunkota.bps.go.id" target="_blank">BPS Kota Madiun</a></li>
-                            <li><box-icon name='chevrons-right' type='solid' color='#ffffff' ></box-icon><a href="https://jdih.madiunkota.go.id" target="_blank">JDIH Kota Madiun</a></li>
-                            <li><box-icon name='chevrons-right' type='solid' color='#ffffff' ></box-icon><a href="https://mail.madiunkota.go.id" target="_blank">Login Email</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="madiunkota.bps.go.id" target="_blank">BPS Kota Madiun</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="kotamadiun.jdih.jatimprov.go.id" target="_blank">JDIH Kota Madiun</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="mail.madiunkota.go.id" target="_blank">Login Email</a></li>
                         </ul>
                     </div>
 
-                    {{-- <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Cari</h4>
-                        
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Cari">
-                        </form>
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Cari berita berdasarkan</h4>
+                       
+                      
 
-                    </div> --}}
+                         <form action="berita/filter_berita" method="post">
+                        @csrf
+                        <input type="text" name="cari_berita"><input type="submit" value="Cari">
+                    </form>
+                      </div>
+            
+        
 
                 </div>
             </div>
@@ -117,8 +122,8 @@
         </div>
     </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    {{-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a> --}}
 
 
     <!-- Vendor JS Files -->

@@ -27,7 +27,7 @@ for ($i=0; $i < 3; $i++) { ?>
 @section('container')
 <section id="hero">
     <div class="hero-container" data-aos="fade-up">
-      
+       
         <img src="assets/img/THMNAIL.png">
         <h1>Website Resmi</h1>
         <h1>Pemerintah <span>Kota Madiun</span></h1>
@@ -201,10 +201,13 @@ for ($i=0; $i < 3; $i++) { ?>
                     
                                     <div class="card" style="width: 30rem;" data-aos="fade-in" data-aos-delay="100">
                                         <a href="/informasi/{{ $berita->id_berita }}">
-                                         <?php   if($berita->path_foto == null){ ?>
+                                         <?php   if($berita->status_path == null){ ?>
                                         <img class="card-img-top" src="assets/img/PECELAND-LOGO-VECTOR-980x693.jpg"
                                             alt="Card image cap"> 
-                                            <?php } else{ ?>
+                                            <?php } else if($berita->status_path == 'link_portal'){ ?>
+                                                <img class="card-img-top" src="{{ $berita->path_foto  }}"
+                                                alt="Card image cap" style=" object-fit: cover;text-align: center;">
+                                         <?php   }else{ ?>
             
                                             <img class="card-img-top" src="{{asset("$berita->path_foto")}}"
                                             alt="Card image cap" style=" object-fit: cover;text-align: center;">
@@ -224,8 +227,8 @@ for ($i=0; $i < 3; $i++) { ?>
                                 
             
             
-                               <a href="/berita"> <button class="btn btn-xs btn-success btn_view" style="border-radius: 20px;" >
-                                 Berita Lainnya
+                               <a href="/berita"> <button class="btn btn-xs btn-info btn_view" style="border-radius: 20px;" >
+                                    <i class="bx bx-grid-alt"></i> Berita Lainnya
                                 </button></a>
             
                         </div>
@@ -237,9 +240,7 @@ for ($i=0; $i < 3; $i++) { ?>
                            
                             <script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script>
 
-                            <div id="gpr-kominfo-widget-container"></div>
-
-                            {{-- <div id="gpr-kominfo-widget-container" data-aos="fade-in" data-aos-delay="100" style="min-width:300px; max-width:780px;best-width:500px "></div> --}}
+                            <div id="gpr-kominfo-widget-container" data-aos="fade-in" data-aos-delay="100" style="min-width:300px; max-width:780px;best-width:500px "></div>
                          
                         </div>
     
