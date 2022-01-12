@@ -186,7 +186,12 @@ class HomeController extends Controller
 
         $berita = DB::table('berita_all')->paginate(15);
     
-      return $berita;
+        return view('berita/berita',[
+            "title" => "Berita",
+           "parent" => "Home",
+           "berita" => $berita
+          
+        ]);
     }
 
  
