@@ -6,11 +6,6 @@
 
 <main id="main">
 
-
-    <!-- Default box -->
-
-
-
     <!-- ======= BERITA TERKINI Section ======= -->
     <section id="berita_terkini" style="background-color:#f0f7fa;">
         <div class="container">
