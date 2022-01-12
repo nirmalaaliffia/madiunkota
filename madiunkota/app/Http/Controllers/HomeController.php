@@ -710,9 +710,25 @@ class HomeController extends Controller
         ]);
     }
 
-
+    
     public function filter_berita(Request $request){
-        return $request;
+        if($request->cari_berita != null){
+           
+            $berita = DB::table('berita_all')->where('status_publish', '=', '1')->orWhere('judul', '~*', '.*' .$request->cari_berita .'*.')->get();
+    
+                  
+                  }else{
+                    //$cari_berita = $request->cari_berita;
+                    $berita = DB::table('berita_all')->get();
+            
+                  }
+           
+                  return view('hasil_pencarian',[
+                    "title" => "Home",
+                   "parent" => "Hasil Pencarian",
+                   "beritas" => $berita,
+                   "cari_berita" => $request->cari_berita
+                ]);
     }
 
    
