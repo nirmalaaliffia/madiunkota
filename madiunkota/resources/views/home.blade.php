@@ -203,7 +203,7 @@ for ($i=0; $i < 3; $i++) { ?>
                     
                                     <div class="card" style="width: 30rem;" data-aos="fade-in" data-aos-delay="100">
                                         <a href="/informasi/{{ $berita->id_berita }}">
-                                         <?php   if($berita->status_path == 'link_portal'){ ?>
+                                         <?php  if($berita->status_path == 'link_portal'){ ?>
                                                 <img class="card-img-top" src="{{ $berita->path_foto  }}"
                                                 alt="Card image cap" style=" object-fit: cover;text-align: center;">
                                          <?php   }else{ ?>
