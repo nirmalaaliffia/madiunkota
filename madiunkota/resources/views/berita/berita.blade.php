@@ -60,13 +60,12 @@
                 @endif
        
                     
-                <div>{{ $berita->links() }}</div>
-
+               
             
 
 
             </div>
-
+            {{ $berita->links() }}
     </section><!-- End BERITA TERKINI Section -->
 
 
