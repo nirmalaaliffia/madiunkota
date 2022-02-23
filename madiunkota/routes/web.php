@@ -95,6 +95,7 @@ Route::post('/admin/profil/update_wilayah_geografis', [ ProfilController::class,
 // Route::post('/admin/berita', [BeritaController::class, 'upload_image'])->name('ckeditor.upload');;
 
 Route::get('/jadwal', [HomeController::class, 'show_jadwal']);
+Route::get('/agenda_kota', [HomeController::class, 'agenda_kota']);
 
 // Route::get('/login2', function () {
 //     return view('auth/login2', [
