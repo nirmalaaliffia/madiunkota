@@ -3,17 +3,18 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\Ipkd;
+use App\Models\ipkd;
 use App\Models\Berita;
 use GuzzleHttp\Client;
-use App\Models\Kategori;
-use App\Models\Foto_berita;
+use App\Models\kategori;
+use App\Models\foto_berita;
 use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Client\Response;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Http;
 use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\Console\Input\Input;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -155,6 +156,7 @@ class HomeController extends Controller
            
         // }
     
+
         return view('home',[
             "title" => "Home",
            "parent" => "Home",
@@ -308,6 +310,39 @@ class HomeController extends Controller
             "title" => "Jadwal",
             "parent" => "jadwal_rapat"
         ]);
+    }
+
+    public function agenda_kota()
+    {
+  
+         $client = new Client(['verify' => false]);
+
+        $link = 'https://agenda.madiunkota.go.id/api/daftarAgenda';
+
+        try{
+            $response = $client->post($link, 
+                array(
+                    'headers' => array(
+                        'passcode' => 'k0taPendekArr'
+                    )
+                )
+            );
+        }catch(RequestException $e){
+            var_dump($e->getResponse()->getBody()->getContents());
+        }
+        
+        $json = $response->getBody()->getContents();
+        
+        $array_result = json_decode($json, true);
+        $jumlah = (count($array_result["data"]));
+      
+     return view('agendaKota', [
+        'title' => 'Daftar Agenda Kota Madiun',
+        "data_agenda" => $array_result,
+        "jumlah" => $jumlah,
+        "parent" => "agenda_kota"  
+
+    ]);
     }
 
 
